@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salari</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- link css bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- link js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <!-- start nav -->
+    <nav class="bg-white py-3 fixed-top shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="text-decoration-none fs-3 fw-bold" style="color: #0b2341;">MULTI</a>
+            <ul class="nav d-none d-lg-flex">
+                <li class="nav-item"><a href="" class="nav-link link-danger active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link text-dark link-danger">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link text-dark link-danger">Services</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link text-dark link-danger">Portfolio</a></li>
+                <li class="nav-item"><a href="#team" class="nav-link text-dark link-danger">Team</a></li>
+                <li class="nav-item dropdown"><a href="" class="nav-link text-dark link-danger dropdown-toggle"
+                        data-bs-toggle="dropdown">Drop Down</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item nav-link text-dark link-danger" href="#">Drop Down 1</a></li>
+                        <li class="dropdown dropend"><a class="nav-link text-dark link-danger dropdown-toggle"
+                                data-bs-toggle="dropdown" href="#">Deep Drop Down</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Deep Drop Down 1</a></li>
+                                <li><a class="dropdown-item" href="#">Deep Drop Down 2</a></li>
+                                <li><a class="dropdown-item" href="#">Deep Drop Down 3</a></li>
+                                <li><a class="dropdown-item" href="#">Deep Drop Down 4</a></li>
+                                <li><a class="dropdown-item" href="#">Deep Drop Down 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item nav-link text-dark link-danger" href="#">Drop Down2</a></li>
+                        <li><a class="dropdown-item nav-link text-dark link-danger" href="#">Drop Down3</a></li>
+                        <li><a class="dropdown-item nav-link text-dark link-danger" href="#">Drop Down4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#contact_us" class="nav-link text-dark link-danger">Contact</a></li>
+                <li class="ms-3"><a href="" class="btn btn-danger btn_danger_hover py-1 px-4">Get Start</a></li>
+            </ul>
+            <!-- Offcanvas Sidebar -->
+            <div class="offcanvas offcanvas-start" id="demo">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="" class="nav-link link-danger active">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link text-dark link-danger">About</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link text-dark link-danger">Services</a>
+                        </li>
+                        <li class="nav-item"><a href="" class="nav-link text-dark link-danger">Portfolio</a></li>
+                        <li class="nav-item"><a href="#team" class="nav-link text-dark link-danger">Team</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark link-danger" href="#" role="button"
+                                data-bs-t0oggle="dropdown">Drop Down</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
+                                <li><a class="dropdown-item" href="#">Deep Drop Down</a></li>
+                                <li><a class="dropdown-item" href="#">Drop Down2</a></li>
+                                <li><a class="dropdown-item" href="#">Drop Down3</a></li>
+                                <li><a class="dropdown-item" href="#">Drop Down4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#contact_us" class="nav-link text-dark link-danger">Contact</a>
+                        </li>
+                        <li class="ms-3"><a href="" class="btn btn-danger py-1 px-4">Get Start</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Button to open the offcanvas sidebar -->
+            <button class="btn btn-light d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start header -->
+    <header class="d-flex flex-column justify-content-center">
+        <div class="container text-white">
+            <h1 class="my_title fw-bold fs-1">Welcome to Multi</h1>
+            <p class="col-6" style="font-size: 15px; font-weight: 500;">Ut velit est quam dolor ad a aliquid qui
+                aliquid. Sequi ea ut et est quaerat sequi nihil ut
+                aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus
+                repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <button class="btn btn-danger btn_danger_hover py-2 px-4 mt-3">Read More</button>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start about us section   -->
+    <section>
+        <div id="about" class="container">
+            <div class="section_title">
+                <h2>About</h2>
+                <div></div>
+                <p>About Us</p>
+            </div>
+            <div class="row mt-4 mb-5">
+                <div class="col-12 col-md-6 p-2">
+                    <div class="m-2">
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="mb-0"><i class="bi bi-check2-all me-2 text-danger fs-5"></i>Ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat</p>
+                        <p class="mb-0"><i class="bi bi-check2-all me-2 text-danger fs-5"></i>Duis aute irure dolor in
+                            reprehenderit in voluptate velit</p>
+                        <p class="mb-0"><i class="bi bi-check2-all me-2 text-danger fs-5"></i>Ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-2">
+                    <div class="m-2">
+                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.</p>
+                        <button class="btn btn-outline-danger px-4">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-6 col-lg-3 bg-white mb-2">
+                    <div class="rounded p-4 shadow" style="min-height: 220px;">
+                        <div>
+                            <i class="bi bi-emoji-smile fs-3 text-danger"></i>
+                            <span class="h1 ms-md-3">232</span>
+                        </div>
+                        <span class="d-block my-2"><strong>Happy Clients</strong> consequuntur quae qui deca rode</span>
+                        <a href="#" class="text-decoration-none fw-bold" style="color: #164682;">Find out more »</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 bg-white mb-2">
+                    <div class="rounded p-4 shadow" style="min-height: 220px;">
+                        <div>
+                            <i class="bi bi-journal-richtext fs-3 text-danger"></i>
+                            <span class="h1 ms-md-3">521</span>
+                        </div>
+                        <span class="d-block my-2"><strong>Projects</strong> adipisci atque cum quia aut numquam
+                            delectus</span>
+                        <a href="#" class="text-decoration-none fw-bold " style="color: #164682;">Find out more »</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 bg-white mb-2">
+                    <div class="rounded p-4 shadow" style="min-height: 220px;">
+                        <div>
+                            <i class="bi bi-headset fs-3 text-danger"></i>
+                            <span class="h1 ms-md-3">1463</span>
+                        </div>
+                        <span class="d-block my-2"><strong>Hours Of Support</strong> aut commodi quaerat. Aliquam
+                            ratione</span>
+                        <a href="#" class="text-decoration-none fw-bold " style="color: #164682;">Find out more »</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 bg-white mb-2">
+                    <div class="rounded p-4 shadow" style="min-height: 220px;">
+                        <div>
+                            <i class="bi bi-people fs-3 text-danger"></i>
+                            <span class="h1 ms-md-3">15</span>
+                        </div>
+                        <span class="d-block my-2"><strong>Hard Workers</strong> rerum asperiores dolor molestiae
+                            doloribu</span>
+                        <a href="#" class="text-decoration-none fw-bold " style="color: #164682;">Find out more »</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about us section  -->
+
+    <!-- start video section   -->
+    <section style="background-color: #f6f9fd;">
+        <div class="container-fluid">
+            <div class="row my-5">
+                <div class="col-12 col-md-5 p-0">
+                    <div class="video_box d-flex justify-content-center align-items-center">
+                        <a href="#"><i class="bi bi-play-circle-fill text-danger" style="font-size: 70px;"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 mb-2">
+                    <div class="m-1 m-sm-2 m-md-3 m-lg-4 m-xl-5">
+                        <p class="" style="font-weight: 400; font-size: 34px; color: #123a6d; line-height: 40px;">Eum
+                            ipsam laborum
+                            deleniti <strong>velit pariatur architecto</strong></p>
+                        <p style="color: #848484;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in
+                            reprehenderit
+                        </p>
+                        <div id="accordion">
+                            <div class="card mb-2">
+                                <div class="card-header bg-white border-bottom-0">
+                                    <div class="d-flex align-items-center">
+                                        <span class="text-danger fw-bold fs-5">01</span>
+                                        <a class="btn text_hover_box" data-bs-toggle="collapse" href="#collapseOne"
+                                            style="color: #0b2341; font-size: 17px; font-weight: 500;">
+                                            Non consectetur a erat nam at lectus urna duis?
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                                        laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
+                                        rhoncus dolor purus non.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-2">
+                                <div class="card-header bg-white border-bottom-0">
+                                    <div class="d-flex align-items-center">
+                                        <span class="text-danger fw-bold fs-5">02</span>
+                                        <a class="btn text_hover_box" data-bs-toggle="collapse" href="#collapse2"
+                                            style="color: #0b2341; font-size: 17px; font-weight: 500;">
+                                            Feugiat scelerisque varius morbi enim nunc?
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="collapse2" class="collapse " data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                        interdum velit laoreet id donec ultrices.
+                                        Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est
+                                        pellentesque elit ullamcorper dignissim.
+                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header bg-white border-bottom-0">
+                                    <div class="d-flex align-items-center">
+                                        <span class="text-danger fw-bold fs-5">03</span>
+                                        <a class="btn text_hover_box" data-bs-toggle="collapse" href="#collapse3"
+                                            style="color: #0b2341; font-size: 17px; font-weight: 500;">
+                                            Dolor sit amet consectetur adipiscing elit?
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="collapse3" class="collapse " data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
+                                        Faucibus pulvinar elementum integer enim.
+                                        Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu
+                                        tincidunt. Lectus urna duis convallis convallis tellus.
+                                        Urna molestie at elementum eu facilisis sed odio morbi quis
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end video section   -->
+
+    <!-- start services section   -->
+    <section>
+        <div id="services" class="container">
+            <div class="section_title">
+                <h2>SERVICES</h2>
+                <div></div>
+                <p>CHECK OUR SERVICES</p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="services_item bg-white shadow rounded py-5 px-2 d-flex flex-column justify-content-center align-items-center"
+                        style="min-height: 350px;">
+                        <div class="services_icon m-2 rounded d-flex justify-content-center align-items-center">
+                            <i class="bi bi-dribbble fs-4 fw-bold"></i>
+                        </div>
+                        <h4 class="my-2">Lorem Ipsum</h4>
+                        <p class="px-3 text-center mt-3">Voluptatum deleniti atque corrupti quos dolores et quas
+                            molestias excepturi</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="services_item bg-white shadow rounded py-5 px-2 d-flex flex-column justify-content-center align-items-center"
+                        style="min-height: 350px;">
+                        <div class="services_icon m-2 rounded d-flex justify-content-center align-items-center">
+                            <i class="bi bi-file-earmark-bar-graph fs-4 fw-bold"></i>
+                        </div>
+                        <h4 class="my-2">Sed ut perspiciatis</h4>
+                        <p class="px-3 text-center mt-3">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="services_item bg-white shadow rounded py-5 px-2 d-flex flex-column justify-content-center align-items-center"
+                        style="min-height: 350px;">
+                        <div class="services_icon m-2 rounded d-flex justify-content-center align-items-center">
+                            <i class="bi bi-speedometer2 fs-4 fw-bold"></i>
+                        </div>
+                        <h4 class="my-2">Magni Dolores</h4>
+                        <p class="px-3 text-center mt-3">Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                            qui officiai</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="services_item bg-white shadow rounded py-5 px-2 d-flex flex-column justify-content-center align-items-center"
+                        style="min-height: 350px;">
+                        <div class="services_icon m-2 rounded d-flex justify-content-center align-items-center">
+                            <i class="bi bi-globe-americas fs-4 fw-bold"></i>
+                        </div>
+                        <h4 class="my-2">Nemo Enim</h4>
+                        <p class="px-3 text-center mt-3">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                            blanditiis</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="services_item bg-white shadow rounded py-5 px-2 d-flex flex-column justify-content-center align-items-center"
+                        style="min-height: 350px;">
+                        <div class="services_icon m-2 rounded d-flex justify-content-center align-items-center">
+                            <i class="bi bi-file-earmark-slides fs-4 fw-bold"></i>
+                        </div>
+                        <h4 class="my-2">Dele cardo</h4>
+                        <p class="px-3 text-center mt-3">Quis consequatur saepe eligendi voluptatem consequatur dolor
+                            consequuntur</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="services_item bg-white shadow rounded py-5 px-2 d-flex flex-column justify-content-center align-items-center"
+                        style="min-height: 350px;">
+                        <div class="services_icon m-2 rounded d-flex justify-content-center align-items-center">
+                            <i class="bi bi-align-bottom fs-4 fw-bold"></i>
+                        </div>
+                        <h4 class="my-2">Divera don</h4>
+                        <p class="px-3 text-center mt-3">Modi nostrum vel laborum. Porro fugit error sit minus sapiente
+                            sit aspernatur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end services section   -->
+
+    <!-- start TESTIMONIALS   -->
+    <section style="background-color: #f6f9fd; min-height: 580px;">
+        <div class="container">
+            <div class="section_title pt-5 pb-2">
+                <h2>TESTIMONIALS</h2>
+                <div></div>
+                <p>TESTIMONIALS</p>
+            </div>
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide " data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators" style="bottom: -10px;">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0"
+                        class="active slider_indicator"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"
+                        class=" slider_indicator"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"
+                        class=" slider_indicator"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"
+                        class=" slider_indicator"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"
+                        class=" slider_indicator"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row p-4">
+                            <div class="col-12 col-lg-6">
+                                <div class="py-3 py-sm-5 p-5 position-relative ms-5 my-1 my-md-2 rounded shadow bg-white"
+                                    style="height:300px;">
+                                    <img src="assets/img/testimonials-1.jpg"
+                                        class="img-thumbnail rounded position-absolute border-0" alt="Los Angeles"
+                                        width="80px" height="80px" style="top: 30px; left: -40px;">
+                                    <h5>Saul Goodman</h5>
+                                    <span class="text-muted d-inline-block mb-2">Ceo & Founder</span>
+                                    <p style="font-style: italic;">
+                                        <i class="bi bi-quote fs-3" style="color: #fdedea;"></i>
+                                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
+                                        suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
+                                        Maecen aliquam, risus at semper.
+                                        <i class="bi bi-quote fs-3" style="color: #fdedea;"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="py-3 py-sm-5 p-5 position-relative ms-5 my-1 my-md-2 rounded shadow bg-white"
+                                    style="height:300px;">
+                                    <img src="assets/img/testimonials-2.jpg"
+                                        class="img-thumbnail rounded position-absolute border-0" alt="Los Angeles"
+                                        width="80px" height="80px" style="top: 30px; left: -40px;">
+                                    <h5>Sara Wilsson</h5>
+                                    <span class="text-muted d-inline-block mb-2">Designer</span>
+                                    <p style="font-style: italic;">
+                                        <i class="bi bi-quote fs-3" style="color: #fdedea;"></i>
+                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum
+                                        quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat
+                                        irure amet legam anim culpa.
+                                        <i class="bi bi-quote fs-3" style="color: #fdedea;"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row p-4">
+                            <div class="col-12 col-lg-6 ">
+                                <div class="py-3 py-sm-5 p-5 position-relative ms-5 my-1 my-md-2 rounded shadow bg-white"
+                                    style="height:300px;">
+                                    <img src="assets/img/testimonials-3.jpg"
+                                        class="img-thumbnail rounded position-absolute border-0" alt="Los Angeles"
+                                        width="80px" height="80px" style="top: 30px; left: -40px;">
+                                    <h5>Jena Karlis</h5>
+                                    <span class="text-muted d-inline-block mb-2">Store Owner</span>
+                                    <p style="font-style: italic;">
+                                        <i class="bi bi-quote fs-3" style="color: #fdedea;"></i>
+                                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
+                                        veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis
+                                        sint minim.
+                                        <i class="bi bi-quote fs-3" style="color: #fdedea;"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 ">
+                                <div class="py-3 py-sm-5 p-5 position-relative ms-5 my-1 my-md-2 rounded shadow bg-white"
+                                    style="height:300px;">
+                                    <img src="assets/img/testimonials-4.jpg"
+                                        class="img-thumbnail rounded position-absolute border-0" alt="Los Angeles"
+                                        width="80px" height="80px" style="top: 30px; left: -40px;">
+                                    <h5>Matt Brandon</h5>
+                                    <span class="text-muted d-inline-block mb-2">Freelancer</span>
+                                    <p style="font-style: italic;">
+                                        <i class="bi bi-quote fs-3" style="color: #fdedea;"></i>
+                                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
+                                        fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore
+                                        quem dolore labore illum veniam.
+                                        <i class="bi bi-quote fs-3" style="color: #fdedea;"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end TESTIMONIALS   -->
+
+    <!-- start cta   -->
+    <section class="py-5 text-white" style="background: #0b2341;">
+        <div class="container py-4 text-center">
+            <h3 class="fs-2">Call To Action</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.</p>
+            <a href="" class="btn btn-outline-danger py-2 px-4 my-1" style="color: white;">Call To Action</a>
+        </div>
+    </section>
+    <!-- end cta   -->
+
+    <!-- start PORTFOLIO   --> <!--overflow-hidden search this-->
+    <section class="my-5">
+        <div id="portfolio" class="container">
+            <div class="section_title">
+                <h2>PORTFOLIO</h2>
+                <div></div>
+                <p>CHECK OUR PORTFOLIO</p>
+            </div>
+            <div class="mb-4 d-flex justify-content-center">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-danger portfolio_item" href="#">ALL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black portfolio_item" href="#">APP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black portfolio_item" href="#">CARD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black portfolio_item" href="#">WEB</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="m-1 position-relative overflow-hidden portfolio_item_box shadow">
+                        <img src="assets/img/portfolio-1.jpg" alt="img" class="img-fluid">
+                        <div class="position-absolute portfolio_hidden_box px-3 pt-3" style="bottom: -150px; left:30px; right:30px;">
+                            <h5 class="text-black">App 1</h5>
+                            <p class="text-primary">App</p>
+                            <a href=""><i class="bi bi-plus fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 60px; top: 20px; color: #123a6d;"></i></a>
+                            <a href=""><i class="bi bi-link-45deg fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 10px; top: 20px; color: #123a6d;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="m-1 position-relative overflow-hidden portfolio_item_box shadow">
+                        <img src="assets/img/portfolio-2.jpg" alt="img" class="img-fluid">
+                        <div class="position-absolute portfolio_hidden_box px-3 pt-3" style="bottom: -150px; left:30px; right:30px;">
+                            <h5 class="text-black">Web 3</h5>
+                            <p class="text-primary">Web</p>
+                            <a href=""><i class="bi bi-plus fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 60px; top: 20px; color: #123a6d;"></i></a>
+                            <a href=""><i class="bi bi-link-45deg fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 10px; top: 20px; color: #123a6d;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="m-1 position-relative overflow-hidden portfolio_item_box shadow">
+                        <img src="assets/img/portfolio-3.jpg" alt="img" class="img-fluid">
+                        <div class="position-absolute portfolio_hidden_box px-3 pt-3" style="bottom: -150px; left:30px; right:30px;">
+                            <h5 class="text-black">App 2</h5>
+                            <p class="text-primary">App</p>
+                            <a href=""><i class="bi bi-plus fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 60px; top: 20px; color: #123a6d;"></i></a>
+                            <a href=""><i class="bi bi-link-45deg fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 10px; top: 20px; color: #123a6d;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="m-1 position-relative overflow-hidden portfolio_item_box shadow">
+                        <img src="assets/img/portfolio-4.jpg" alt="img" class="img-fluid">
+                        <div class="position-absolute portfolio_hidden_box px-3 pt-3" style="bottom: -150px; left:30px; right:30px;">
+                            <h5 class="text-black">Card 2</h5>
+                            <p class="text-primary">Card</p>
+                            <a href=""><i class="bi bi-plus fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 60px; top: 20px; color: #123a6d;"></i></a>
+                            <a href=""><i class="bi bi-link-45deg fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 10px; top: 20px; color: #123a6d;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="m-1 position-relative overflow-hidden portfolio_item_box shadow">
+                        <img src="assets/img/portfolio-5.jpg" alt="img" class="img-fluid">
+                        <div class="position-absolute portfolio_hidden_box px-3 pt-3" style="bottom: -150px; left:30px; right:30px;">
+                            <h5 class="text-black">Web 2</h5>
+                            <p class="text-primary">Web</p>
+                            <a href=""><i class="bi bi-plus fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 60px; top: 20px; color: #123a6d;"></i></a>
+                            <a href=""><i class="bi bi-link-45deg fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 10px; top: 20px; color: #123a6d;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="m-1 position-relative overflow-hidden portfolio_item_box shadow">
+                        <img src="assets/img/portfolio-6.jpg" alt="img" class="img-fluid">
+                        <div class="position-absolute portfolio_hidden_box px-3 pt-3" style="bottom: -150px; left:30px; right:30px;">
+                            <h5 class="text-black">App 3</h5>
+                            <p class="text-primary">App</p>
+                            <a href=""><i class="bi bi-plus fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 60px; top: 20px; color: #123a6d;"></i></a>
+                            <a href=""><i class="bi bi-link-45deg fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 10px; top: 20px; color: #123a6d;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="m-1 position-relative overflow-hidden portfolio_item_box shadow">
+                        <img src="assets/img/portfolio-7.jpg" alt="img" class="img-fluid">
+                        <div class="position-absolute portfolio_hidden_box px-3 pt-3" style="bottom: -150px; left:30px; right:30px;">
+                            <h5 class="text-black">Card 1</h5>
+                            <p class="text-primary">Card</p>
+                            <a href=""><i class="bi bi-plus fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 60px; top: 20px; color: #123a6d;"></i></a>
+                            <a href=""><i class="bi bi-link-45deg fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 10px; top: 20px; color: #123a6d;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="m-1 position-relative overflow-hidden portfolio_item_box shadow">
+                        <img src="assets/img/portfolio-8.jpg" alt="img" class="img-fluid">
+                        <div class="position-absolute portfolio_hidden_box px-3 pt-3" style="bottom: -150px; left:30px; right:30px;">
+                            <h5 class="text-black">Card 3</h5>
+                            <p class="text-primary">Card</p>
+                            <a href=""><i class="bi bi-plus fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 60px; top: 20px; color: #123a6d;"></i></a>
+                            <a href=""><i class="bi bi-link-45deg fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 10px; top: 20px; color: #123a6d;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="m-1 position-relative overflow-hidden portfolio_item_box shadow">
+                        <img src="assets/img/portfolio-9.jpg" alt="img" class="img-fluid">
+                        <div class="position-absolute portfolio_hidden_box px-3 pt-3" style="bottom: -150px; left:30px; right:30px;">
+                            <h5 class="text-black">Web 3</h5>
+                            <p class="text-primary">Web</p>
+                            <a href=""><i class="bi bi-plus fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 60px; top: 20px; color: #123a6d;"></i></a>
+                            <a href=""><i class="bi bi-link-45deg fs-2 position-absolute portfolio_item_icon" style="font-size: 24px; right: 10px; top: 20px; color: #123a6d;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="position-relative overflow-hidden portfolio_item border shadow"
+                        style="min-height: 300px;">
+                        <div style="position: absolute; bottom: -120px; left: 30px; right: 30px;"
+                            class="portfolio_hidden_box border pt-2 px-2">
+                            <h4 class="text-black">App 1</h4>
+                            <p class="text-primary">App</p>
+                            <a href=""><i class="bi bi-plus portfolio_item_link_1 fs-2"></i></a>
+                            <a href=""><i class="bi bi-link-45deg portfolio_item_link_2 fs-2"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="col-12 col-sm-6 col-md-4 mb-1">
+                    <div class="position-relative overflow-hidden portfolio_item border shadow"
+                        style="min-height: 400px;">
+                        <div style="position: absolute; bottom: -150px; left: 100px;"
+                            class="portfolio_hidden_box border p-5">
+                        </div>
+                    </div>
+                </div> -->
+        </div>
+    </section>
+    <!-- end PORTFOLIO   -->
+
+    <!-- start TEAM -->
+    <section style="background-color: #f6f9fd;">
+        <div id="team" class="container pb-5">
+            <div class="section_title py-5">
+                <h2>TEAM</h2>
+                <div></div>
+                <p>CHECK OUR TEAM</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="m-1 position-relative overflow-hidden team_item">
+                        <img src="assets/img/team-1.jpg" alt="img" class="img-fluid">
+                        <div class="position-absolute text-center team_hidden_box" style="bottom: -120px; left: 50px;">
+                            <h6 class="fw-bold text-white" style="min-width: 150px;">Walter White</h6>
+                            <span class="fst-italic text-white" style="min-width: 150px; font-size: 14px;">ChiefExecutive Officer</span>
+                        </div>
+                        <div class="position-absolute p-2 team_hidden_box_2 h-100" style="width: 50px; background: rgba(11, 35, 65, 0.5);">
+                            <div class="d-flex justify-content-between flex-column text-center">
+                                <a href="" class=" mb-1"><i class=" team_icon bi bi-twitter text-white"></i></a>
+                                <a href="" class=" mb-1"><i class=" team_icon bi bi-facebook text-white"></i></a>
+                                <a href="" class=" mb-1"><i class=" team_icon bi bi-instagram text-white"></i></a>
+                                <a href="" class=""><i class=" team_icon bi bi-linkedin text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="m-1 position-relative overflow-hidden team_item">
+                        <img src="assets/img/team-2.jpg" alt="img" class="img-fluid">
+                        <div class="position-absolute text-center team_hidden_box" style="bottom: -120px; left: 50px;">
+                            <h6 class="fw-bold text-white" style="min-width: 150px;">Sarah Jhonson</h6>
+                            <span class="fst-italic text-white" style="min-width: 150px; font-size: 14px;">Product
+                                Manager</span>
+                        </div>
+                        <div class="position-absolute p-2 team_hidden_box_2 h-100"
+                            style="width: 50px; background: rgba(11, 35, 65, 0.5);">
+                            <div class="d-flex justify-content-between flex-column text-center">
+                                <a href="" class=" mb-1"><i class=" team_icon bi bi-twitter text-white"></i></a>
+                                <a href="" class=" mb-1"><i class=" team_icon bi bi-facebook text-white"></i></a>
+                                <a href="" class=" mb-1"><i class=" team_icon bi bi-instagram text-white"></i></a>
+                                <a href="" class=""><i class=" team_icon bi bi-linkedin text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="m-1 position-relative overflow-hidden team_item">
+                        <img src="assets/img/team-3.jpg" alt="img" class="img-fluid">
+                        <div class="position-absolute text-center team_hidden_box" style="bottom: -120px; left: 50px;">
+                            <h6 class="fw-bold text-white" style="min-width: 150px;">William Anderson</h6>
+                            <span class="fst-italic text-white" style="min-width: 150px; font-size: 14px;">CTO</span>
+                        </div>
+                        <div class="position-absolute p-2 team_hidden_box_2 h-100"
+                            style="width: 50px; background: rgba(11, 35, 65, 0.5);">
+                            <div class="d-flex justify-content-between flex-column text-center">
+                                <a href="" class=" mb-1"><i class=" team_icon bi bi-twitter text-white"></i></a>
+                                <a href="" class=" mb-1"><i class=" team_icon bi bi-facebook text-white"></i></a>
+                                <a href="" class=" mb-1"><i class=" team_icon bi bi-instagram text-white"></i></a>
+                                <a href="" class=""><i class=" team_icon bi bi-linkedin text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="m-1 position-relative overflow-hidden team_item">
+                        <img src="assets/img/team-4.jpg" alt="img" class="img-fluid">
+                        <div class="position-absolute text-center team_hidden_box" style="bottom: -120px; left: 50px;">
+                            <h6 class="fw-bold text-white" style="min-width: 150px;">Amanda Jepson</h6>
+                            <span class="fst-italic text-white"
+                                style="min-width: 150px; font-size: 14px;">Accountant</span>
+                        </div>
+                        <div class="position-absolute p-2 team_hidden_box_2 h-100"
+                            style="width: 50px; background: rgba(11, 35, 65, 0.5);">
+                            <div class="d-flex justify-content-between flex-column text-center">
+                                <a href="" class=" mb-1"><i class=" team_icon bi bi-twitter text-white"></i></a>
+                                <a href="" class=" mb-1"><i class=" team_icon bi bi-facebook text-white"></i></a>
+                                <a href="" class=" mb-1"><i class=" team_icon bi bi-instagram text-white"></i></a>
+                                <a href="" class=""><i class=" team_icon bi bi-linkedin text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end TEAM -->
+
+    <!-- start PRICING -->
+    <section>
+        <div class="container">
+            <div class="section_title py-5">
+                <h2>PRICING</h2>
+                <div></div>
+                <p>OUR COMPETING PRICES</p>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-md-4 mb-2">
+                    <div class="shadow py-5 text-center">
+                        <h3 class="mb-3 fw-light">Free</h3>
+                        <h1 class="mb-3" style="font-family: Open Sans , sans-serif;">
+                            $0
+                            <span class="d-block fs-5" style="color: #bababa;">per month</span>
+                        </h1>
+                        <ul class="nav flex-column mb-2 align-items-start ps-5" style="color: #bababa;">
+                            <li class="nav-item fw-semibold">
+                                <i class="bi bi-check2 text-danger fs-5 me-2"></i>Quam adipiscing vitae proin
+                            </li>
+                            <li class="nav-item fw-semibold">
+                                <i class="bi bi-check2 text-danger fs-5 me-2"></i> Nec feugiat nisl pretium
+                            </li>
+                            <li class="nav-item fw-semibold">
+                                <i class="bi bi-check2 text-danger fs-5 me-2"></i> Nulla at volutpat diam uteera
+                            </li>
+                            <li class="nav-item fw-semibold text-decoration-line-through">
+                                <i class="bi bi-x me-2 fs-5"></i>Pharetra massa massa ultricies
+                            </li>
+                            <li class="nav-item fw-semibold text-decoration-line-through">
+                                <i class="bi bi-x me-2 fs-5"></i> Massa ultricies mi quis hendrerit
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline-dark my-4 px-4 py-2 fw-bold">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-2">
+                    <div class="shadow text-center" style="border: 4px solid #ed502e; padding: 70px 0;">
+                        <h3 class="mb-3 fw-light">Business</h3>
+                        <h1 class="mb-3" style="font-family: Open Sans , sans-serif;">
+                            $29
+                            <span class="d-block fs-5" style="color: #bababa;">per month</span>
+                        </h1>
+                        <ul class="nav flex-column mb-2 align-items-start ps-5" style="color: #bababa;">
+                            <li class="nav-item fw-semibold">
+                                <i class="bi bi-check2 text-danger fs-5 me-2"></i>Quam adipiscing vitae proin
+                            </li>
+                            <li class="nav-item fw-semibold">
+                                <i class="bi bi-check2 text-danger fs-5 me-2"></i> Nec feugiat nisl pretium
+                            </li>
+                            <li class="nav-item fw-semibold">
+                                <i class="bi bi-check2 text-danger fs-5 me-2"></i> Nulla at volutpat diam uteera
+                            </li>
+                            <li class="nav-item fw-semibold">
+                                <i class="bi bi-check2 text-danger me-2 fs-5"></i>Pharetra massa massa ultricies
+                            </li>
+                            <li class="nav-item fw-semibold">
+                                <i class="bi bi-check2 text-danger me-2 fs-5"></i> Massa ultricies mi quis hendrerit
+                            </li>
+                        </ul>
+                        <button class="btn btn-danger mt-4 mb-5 px-4 py-2 fw-bold btn_danger_hover">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-2">
+                    <div class="shadow py-5 text-center">
+                        <h3 class="mb-3 fw-light">Developer</h3>
+                        <h1 class="mb-3" style="font-family: Open Sans , sans-serif;">
+                            $49
+                            <span class="d-block fs-5" style="color: #bababa;">per month</span>
+                        </h1>
+                        <ul class="nav flex-column mb-2 align-items-start ps-5" style="color: #bababa;">
+                            <li class="nav-item fw-semibold">
+                                <i class="bi bi-check2 text-danger fs-5 me-2"></i>Quam adipiscing vitae proin
+                            </li>
+                            <li class="nav-item fw-semibold">
+                                <i class="bi bi-check2 text-danger fs-5 me-2"></i> Nec feugiat nisl pretium
+                            </li>
+                            <li class="nav-item fw-semibold">
+                                <i class="bi bi-check2 text-danger fs-5 me-2"></i> Nulla at volutpat diam uteera
+                            </li>
+                            <li class="nav-item fw-semibold">
+                                <i class="bi bi-check2 text-danger me-2 fs-5"></i>Pharetra massa massa ultricies
+                            </li>
+                            <li class="nav-item fw-semibold">
+                                <i class="bi bi-check2 text-danger me-2 fs-5"></i> Massa ultricies mi quis hendrerit
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline-dark my-4 px-4 py-2 fw-bold">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end PRICING -->
+
+    <!-- start ASKED QUESTIONS -->
+    <section>
+        <div class="container">
+            <div class="section_title py-5">
+                <h2>F.A.Q</h2>
+                <div></div>
+                <p>FREQUENTLY ASKED QUESTIONS</p>
+            </div>
+            <div class="row my-3 py-4" style="border-bottom: 1px solid #e9f1fb;">
+                <div class="col-12 col-lg-5 d-flex">
+                    <i class="bi bi-question-circle text-info fs-6 m-0" style="line-height: 0;"></i>
+                    <h6 class="px-3">Non consectetur a erat nam at lectus urna duis?</h6>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <p>
+                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
+                        curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    </p>
+                </div>
+            </div>
+            <div class="row my-3 py-4" style="border-bottom: 1px solid #e9f1fb;">
+                <div class="col-12 col-lg-5 d-flex">
+                    <i class="bi bi-question-circle text-info fs-6 m-0" style="line-height: 0;"></i>
+                    <h6 class="px-3">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h6>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <p>
+                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit
+                        laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est
+                        pellentesque elit ullamcorper dignissim.
+                    </p>
+                </div>
+            </div>
+            <div class="row my-3 py-4" style="border-bottom: 1px solid #e9f1fb;">
+                <div class="col-12 col-lg-5 d-flex">
+                    <i class="bi bi-question-circle text-info fs-6 m-0" style="line-height: 0;"></i>
+                    <h6 class="px-3">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h6>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <p>
+                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
+                        elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
+                        pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.
+                    </p>
+                </div>
+            </div>
+            <div class="row my-3 py-4" style="border-bottom: 1px solid #e9f1fb;">
+                <div class="col-12 col-lg-5 d-flex">
+                    <i class="bi bi-question-circle text-info fs-6 m-0" style="line-height: 0;"></i>
+                    <h6 class="px-3">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h6>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <p>
+                        Aperiam itaque sit optio et deleniti eos nihil quidem cumque. Voluptas dolorum accusantium sunt
+                        sit enim. Provident consequuntur quam aut reiciendis qui rerum dolorem sit odio. Repellat
+                        assumenda soluta sunt pariatur error doloribus fuga.
+                    </p>
+                </div>
+            </div>
+            <div class="row my-3 py-4" style="border-bottom: 1px solid #e9f1fb;">
+                <div class="col-12 col-lg-5 d-flex">
+                    <i class="bi bi-question-circle text-info fs-6 m-0" style="line-height: 0;"></i>
+                    <h6 class="px-3">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h6>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <p>
+                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante
+                        in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum
+                        est. Purus gravida quis blandit turpis cursus in
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end ASKED QUESTIONS -->
+
+    <!-- start contact us section  -->
+    <section style="background-color: #f6f9fd;">
+        <div id="contact_us" class="container">
+            <div class="section_title py-5">
+                <h2>CONTACT</h2>
+                <div></div>
+                <p>CONTACT US</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <div class="m-1 bg-white shadow text-center py-4">
+                                <i class="bi bi-geo-alt contact_box"></i>
+                                <h4 class="mt-2" style="color: #777777;">Our Address</h4>
+                                <p>A108 Adam Street, New York, NY 535022</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-2">
+                            <div class=" bg-white shadow text-center py-4">
+                                <i class="bi bi-envelope contact_box"></i>
+                                <h4 class="mt-2" style="color: #777777;">Email Us</h4>
+                                <p>
+                                    info@example.com
+                                    <br>
+                                    contact@example.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class=" bg-white shadow text-center py-4">
+                                <i class="bi bi-telephone contact_box"></i>
+                                <h4 class="mt-2" style="color: #777777;">Call Us</h4>
+                                <p>
+                                    +1 5589 55488 55
+                                    <br>
+                                    +1 6678 254445 41
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 bg-white shadow mb-5 p-4">
+                    <div class="row justify-content-center">
+                        <div class="col-6 pt-2">
+                            <input type="text" placeholder="Your Name" class="form-control">
+                        </div>
+                        <div class="col-6 pt-2">
+                            <input type="email" placeholder="Your Email" class="form-control">
+                        </div>
+                        <div class="col-12 pt-3">
+                            <input type="text" placeholder="Subject" class="form-control">
+                        </div>
+                        <div class="col-12 pt-3">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="form-control"
+                                style="height: 180px;"></textarea>
+                        </div>
+                        <button class="btn btn-danger btn_danger_hover py-2 mt-3 col-6 col-lg-4">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end contact us section  -->
+
+    <!-- start footer -->
+    <footer style="background: #071527; padding: 0 0 30px 0; color: #fff; font-size: 14px;">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="p-2 text-center footer_item1">
+                        <h3 class="fw-bold mt-4">Multi</h3>
+                        <p class="fs-6">
+                            Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi quod.
+                        </p>
+                        <p>
+                            A108 Adam Street
+                            <br>
+                            NY 535022, USA
+                            <br><br>
+                            <strong>Phone :</strong>
+                            +1 5589 55488 55
+                            <br>
+                            <strong>Email :</strong>
+                            info@example.com
+                            <br>
+                        </p>
+                        <div class="my-3">
+                            <a href="" class="footer_link_item1"><i class="bi bi-twitter"></i></a>
+                            <a href="" class="footer_link_item1"><i class="bi bi-facebook"></i></a>
+                            <a href="" class="footer_link_item1"><i class="bi bi-instagram"></i></a>
+                            <a href="" class="footer_link_item1"><i class="bi bi-skype"></i></a>
+                            <a href="" class="footer_link_item1"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2 mb-4">
+                    <h5>Useful Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mt-3">
+                            <i class="bi bi-chevron-right text-danger"></i>
+                            <a href="" class="text-decoration-none text-white link-danger"
+                                style="font-size: 15px;">Home</a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <i class="bi bi-chevron-right text-danger"></i>
+                            <a href="" class="text-decoration-none text-white link-danger"
+                                style="font-size: 15px;">About us</a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <i class="bi bi-chevron-right text-danger"></i>
+                            <a href="" class="text-decoration-none text-white link-danger"
+                                style="font-size: 15px;">Services</a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <i class="bi bi-chevron-right text-danger"></i>
+                            <a href="" class="text-decoration-none text-white link-danger"
+                                style="font-size: 15px;">Terms of service</a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <i class="bi bi-chevron-right text-danger"></i>
+                            <a href="" class="text-decoration-none text-white link-danger"
+                                style="font-size: 15px;">Privacy policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2 mb-4">
+                    <h5>Our Services</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mt-3">
+                            <i class="bi bi-chevron-right text-danger"></i>
+                            <a href="" class="text-decoration-none text-white link-danger" style="font-size: 15px;">Web
+                                Design</a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <i class="bi bi-chevron-right text-danger"></i>
+                            <a href="" class="text-decoration-none text-white link-danger" style="font-size: 15px;">Web
+                                Development</a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <i class="bi bi-chevron-right text-danger"></i>
+                            <a href="" class="text-decoration-none text-white link-danger"
+                                style="font-size: 15px;">Product Management</a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <i class="bi bi-chevron-right text-danger"></i>
+                            <a href="" class="text-decoration-none text-white link-danger"
+                                style="font-size: 15px;">Marketing</a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <i class="bi bi-chevron-right text-danger"></i>
+                            <a href="" class="text-decoration-none text-white link-danger"
+                                style="font-size: 15px;">Graphic Design</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <h5>Our Newsletter</h5>
+                    <p class="fs-6 my-4">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-text text-white border-0 px-3"
+                                style="background-color: #ed502e;">Subscribe</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <div class="footer_item2">
+                    © Copyright <strong>Multi</strong>. All Rights Reserved
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- come top -->
+    <a href="#top" class="back_to_top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short text-white fs-3"></i></a>
+</body>
+
+</html>

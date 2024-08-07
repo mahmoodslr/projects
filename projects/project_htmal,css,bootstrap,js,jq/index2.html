@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link id="st" rel="stylesheet" href="assets/css/style2.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap js  -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery-js -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- jquery UI-js -->
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js" integrity="sha256-J8ay84czFazJ9wcTuSDLpPmwpMXOm573OUtZHPQqpEU=" crossorigin="anonymous"></script>
+    <!-- jq-counter -->
+    <script src="assets/counter.js-master/counter.js-master/js/jquery.easing.js"></script>
+    <script src="assets/counter.js-master/counter.js-master/js/counter.min.js"></script>
+    <!-- css AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- JS AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body class="body_color m-0 p-0">
+
+    <!-- start header -->
+    <header class="pt-md-2 mx-md-3">
+        
+        <!-- over md header -->
+        <div class="d-none d-md-inline">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <!-- left div -->
+                <div class="d-flex">
+                    <!-- log out -->
+                    <div>
+                        <a href="" class="text_danger_hover p-2 rounded-2">
+                            <img src="assets/img/Exit-logo.svg" alt="img">
+                        </a>
+                    </div>
+                    <!-- notif -->
+                    <div class="ms-2">
+                        <a href="" class="text_white_hover p-2 rounded-2">
+                            <img src="assets/img/notification.svg" alt="img">
+                        </a>
+                    </div>
+                    <!-- inventory -->
+                    <div class="ms-3">
+                        <a href="" class="text-decoration-none bg-white py-2 px-3 rounded-2" dir="rtl">
+                            <img src="assets/img/card.svg" alt="img">
+                            <span class="text-black me-1">۸٬۷۶۵٬۳۲۱</span>
+                            <span class="text-black">تومان</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- right div -->
+                <div class="d-flex justify-content-center align-items-center mx-2" dir="rtl">
+                    <!-- logo -->
+                    <div>
+                        <a href="https://www.daneshjooyar.com/">
+                            <img src="assets/img/daneshjoyar-logo.svg" alt="img">
+                        </a>
+                    </div>
+                    <!-- Profile offcanvas -->
+                    <div class="offcanvas offcanvas-end" id="demo">
+                        <!-- header -->
+                        <div class="offcanvas-header d-flex justify-content-between">
+                            <div>
+                                <a href="https://www.daneshjooyar.com/">
+                                    <img src="assets/img/daneshjoyar-logo.svg" alt="img">
+                                </a>
+                            </div>
+                            <div>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                        </div>
+                        <!-- body -->
+                        <div class="offcanvas-body">
+                            <div class="d-flex align-items-stretch">
+                                <div class="ms-3 p-1 position-relative">
+                                    <svg width="90" height="90" viewBox="0 0 250 250" class="circular-progress">
+                                        <circle class="bg"></circle>
+                                        <circle class="fg"></circle>
+                                    </svg>
+                                    <div class="position-absolute div_img">
+                                        <a href="">
+                                            <img src="assets/img/Picture1.png" alt="img" class="img_profile_offcanvas">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column pt-2">
+                                    <div class="rounded-2 p-1 text-white text-center text_percentage_profile_offcanvas">
+                                        <span class="span_counter"></span>%
+                                    </div>
+                                    <div class="mt-1">
+                                        <span class="fw-bold">امیر بزی</span> 
+                                        <span class="profile_dot"></span>
+                                        <span class="opacity-50">مدرس</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- accordion -->
+                            <div class="mt-3">
+                                <div id="accordion">
+                                    <!-- item1 -->
+                                    <div class="card body-bg-accordion mb-2 my_card">
+                                        <div class="card-header">
+                                            <a class="btn d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseSix">
+                                                <div >
+                                                    <img class="ms-2" src="assets/img/person-circle.svg" alt="img">
+                                                    <span class="fs-5">پروفایل من </span>
+                                                </div>
+                                                <div >
+                                                    <img src="assets/img/arrow-left.svg" alt="img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+                                            <div class="card-body">
+                                                ...
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- item2 -->
+                                    <div class="card body-bg-accordion mb-2">
+                                        <div class="card-header">
+                                            <a class="btn d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseSeven">
+                                                <div >
+                                                    <img class="ms-2" src="assets/img/command.svg" alt="img">
+                                                    <span  class="fs-5">مدیریت کارکنان </span>
+                                                </div>
+                                                <div >
+                                                    <img src="assets/img/arrow-left.svg" alt="img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
+                                            <div class="card-body">
+                                                ...
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- item3 -->
+                                    <div class="card body-bg-accordion mb-2">
+                                        <div class="card-header">
+                                            <a class="btn d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseEight">
+                                                <div >
+                                                    <img class="ms-2" src="assets/img/box-2.svg" alt="img">
+                                                    <span class="fs-5 fw-bold"> سرویس اَد پِلاس </span>
+                                                </div>
+                                                <div >
+                                                    <img src="assets/img/arrow-left.svg" alt="img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div id="collapseEight" class="collapse" data-bs-parent="#accordion">
+                                            <div class="card-body d-flex flex-column align-items-center">
+    
+                                                <!-- item3_1 -->
+                                                <a class=" w-75 text-black text-decoration-none py-2 px-3 accordion-link mb-2" href="">
+                                                    <span>توضیحات سرویس</span>
+                                                </a>
+    
+                                                <!-- item3_2 -->
+                                                <a class=" w-75 text-black text-decoration-none py-2 px-3 accordion-link mb-2" href="">
+                                                    <span>درخواست کمپین جدید</span>
+                                                </a>
+    
+                                                <!-- item3_3 -->
+                                                <a class=" w-75 text-black text-decoration-none py-2 px-3 accordion-link " href="">
+                                                    <span> گزارش کمپین ها</span>
+                                                </a>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Button to open the offcanvas sidebar -->
+                    <button class="btn text_white_hover py-2 px-3 rounded-2 me-3 button_offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <i class="bi bi-list fs-5"></i>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        
+        <!-- md header -->
+        <div class="d-md-none d-inline">
+            <div class="container-fluid d-flex justify-content-between align-items-center bg-white py-2">
+                <!-- left div -->
+                <div class="d-flex">
+                    <!-- handbag -->
+                    <div>
+                        <a href="" class="text_light_hover p-2 rounded-2">
+                            <i class="bi bi-handbag fs-3 text-primary"></i>
+                        </a>
+                    </div>
+                    <!-- search -->
+                    <div class="ms-2">
+                        <a href="" class="text_light_hover p-2 rounded-2">
+                            <i class="bi bi-search fs-3 text-primary"></i>
+                        </a>
+                    </div>
+                    <!-- person -->
+                    <div class="ms-2">
+                        <a href="" class="text_light_hover p-2 rounded-2">
+                            <i class="bi bi-person fs-3 text-primary"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- right div -->
+                <div class="d-flex justify-content-center align-items-center mx-2" dir="rtl">
+                    <!-- logo -->
+                    <div>
+                        <a href="https://www.daneshjooyar.com/">
+                            <img src="assets/img/daneshjoyar-logo.svg" alt="img">
+                        </a>
+                    </div>
+                    <!-- Profile offcanvas -->
+                    <div class="offcanvas offcanvas-end" id="demo2">
+                        <!-- header -->
+                        <div class="offcanvas-header d-flex justify-content-between">
+                            <div>
+                                <a href="https://www.daneshjooyar.com/">
+                                    <img src="assets/img/daneshjoyar-logo.svg" alt="img">
+                                </a>
+                            </div>
+                            <div>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                        </div>
+                        <!-- body -->
+                        <div class="offcanvas-body">
+                            <div class="d-flex align-items-stretch">
+                                <div class="ms-3 p-1 position-relative">
+                                    <svg width="90" height="90" viewBox="0 0 250 250" class="circular-progress">
+                                        <circle class="bg"></circle>
+                                        <circle class="fg"></circle>
+                                    </svg>
+                                    <div class="position-absolute div_img">
+                                        <a href="">
+                                            <img src="assets/img/Picture1.png" alt="img" class="img_profile_offcanvas">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column pt-2">
+                                    <div class="rounded-2 p-1 text-white text-center text_percentage_profile_offcanvas">
+                                        <span class="span_counter"></span>%
+                                    </div>
+                                    <div class="mt-1">
+                                        <span class="fw-bold">امیر بزی</span> 
+                                        <span class="profile_dot"></span>
+                                        <span class="opacity-50">مدرس</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- accordion -->
+                            <div class="mt-3">
+                                <div id="accordion">
+                                    <!-- item1 -->
+                                    <div class="card body-bg-accordion mb-2 my_card">
+                                        <div class="card-header">
+                                            <a class="btn d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseSix">
+                                                <div >
+                                                    <img class="ms-2" src="assets/img/person-circle.svg" alt="img">
+                                                    <span class="fs-5">پروفایل من </span>
+                                                </div>
+                                                <div >
+                                                    <img src="assets/img/arrow-left.svg" alt="img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+                                            <div class="card-body">
+                                                ...
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- item2 -->
+                                    <div class="card body-bg-accordion mb-2">
+                                        <div class="card-header">
+                                            <a class="btn d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseSeven">
+                                                <div >
+                                                    <img class="ms-2" src="assets/img/command.svg" alt="img">
+                                                    <span  class="fs-5">مدیریت کارکنان </span>
+                                                </div>
+                                                <div >
+                                                    <img src="assets/img/arrow-left.svg" alt="img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
+                                            <div class="card-body">
+                                                ...
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- item3 -->
+                                    <div class="card body-bg-accordion mb-2">
+                                        <div class="card-header">
+                                            <a class="btn d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseEight">
+                                                <div >
+                                                    <img class="ms-2" src="assets/img/box-2.svg" alt="img">
+                                                    <span class="fs-5 fw-bold"> سرویس اَد پِلاس </span>
+                                                </div>
+                                                <div >
+                                                    <img src="assets/img/arrow-left.svg" alt="img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div id="collapseEight" class="collapse" data-bs-parent="#accordion">
+                                            <div class="card-body d-flex flex-column align-items-center">
+    
+                                                <!-- item3_1 -->
+                                                <a class=" w-75 text-black text-decoration-none py-2 px-3 accordion-link mb-2" href="">
+                                                    <span>توضیحات سرویس</span>
+                                                </a>
+    
+                                                <!-- item3_2 -->
+                                                <a class=" w-75 text-black text-decoration-none py-2 px-3 accordion-link mb-2" href="">
+                                                    <span>درخواست کمپین جدید</span>
+                                                </a>
+    
+                                                <!-- item3_3 -->
+                                                <a class=" w-75 text-black text-decoration-none py-2 px-3 accordion-link " href="">
+                                                    <span> گزارش کمپین ها</span>
+                                                </a>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Button to open the offcanvas sidebar -->
+                    <button class="btn text_light_hover py-2 px-3 rounded-2 me-3 button_offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo2">
+                        <i class="bi bi-list fs-5"></i>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <!-- end header -->
+
+
+    <hr class="my-2 d-none d-md-block" style="background-color: #E6E6E6;">
+
+
+    <div class="container">
+
+        <!-- start section_1   -->
+        <section class="d-flex justify-content-between align-items-end my-5">
+            <div class="row">
+                <!-- video -->
+                <h2 class="fw-bold d-block d-lg-none text-end mb-4">درخواست کمپین ویژه</h2>
+                <div class="col-12 col-lg-6 rounded-2 d-flex justify-content-center">
+                    <img src="assets/img/Video.svg" alt="img" class="img-fluid">
+                </div>
+                <!-- text -->
+                <div class="col-12 col-lg-6 mb-2">
+                    <div dir="rtl">
+                        <h2 class="fw-bold d-none d-lg-block">درخواست کمپین ویژه</h2>
+                        <p class="mt-4 text_section1_p">شانست رو امتحان کن. تویه هر کدوم از این جعبه یک درصد
+                            تخفیف هیجان انگیز بین 60 تا 80 درصد + امتیاز خفنی که بهت کمک میکنه جزو 11 نفر اول بشی و
+                            همچنین به حداقل امتیاز مورد نیاز برای باز کردن جعبه شگفت انگیز برسی.</p>
+                    </div>
+                    <div class="row d-flex justify-content-center justify-content-xxl-start">
+                        <button class="col-12 col-xxl-4 fw-bold btn border-1 border-primary p-2 mt-3 mx-2 btn_click_section1"> 
+                            <a href="#" class="text-decoration-none">گفتگو مستقیم با کمپین منیجر</a>
+                        </button>
+                        <button class="col-12 col-xxl-4 fw-bold btn border-1 border-primary p-2 mt-3 mx-2 btn_click_section1">
+                            <a href="#" class="text-decoration-none">سوالات متداول</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section_1   -->
+
+        <!-- start section_2 -->
+        <section class="">
+            <div class="bg-white p-4 rounded-2" dir="rtl">
+                <h4>جهت درخواست، مراحل زیر را انجام دهید</h4>
+                <!-- part1 -->
+                <div class="mt-5">
+                    <h6>1. برای اجرای کمپین برای هرکدام از دوره های خود به صورت جداگانه این موارد را انتخاب کنید.</h6>
+                    <div class="d-flex justify-content-between align-items-center bg-light rounded-2 pt-1 px-2 mt-3 div_box_course div_border item_cursor_hover">
+                        <div>
+                            <p class="opacity-75">دوره مورد نظر خود را انتخاب کنید</p>
+                        </div>
+                        <div>
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2 mt-1 d-none div_box_items_course" dir="ltr">
+                        <div class="my-2 d-flex flex-column" dir="rtl">
+                            <span class="p-2 my-1 mx-3  rounded-2 text-decoration-none text-dark box_item_course item_cursor_hover">جامع
+                                ترین دوره آموزش برنامه نویسی اندروید (کاتلین، فلاتر و جاوا)</span>
+                            <span class="p-2 my-1 mx-3 rounded-2 text-decoration-none text-dark box_item_course item_cursor_hover">دوره
+                                آموزش آشنایی با مفاهیم وب</span>
+                            <span class="p-2 my-1 mx-3 rounded-2 text-decoration-none text-dark box_item_course item_cursor_hover">دوره
+                                جامع آموزش سخت افزار کامپیوتر بصورت رایگان</span>
+                            <span class="p-2 my-1 mx-3 rounded-2 text-decoration-none text-dark box_item_course item_cursor_hover">جامع
+                                ترین دوره آموزش برنامه نویسی اندروید (کاتلین، فلاتر و جاوا)</span>
+                            <span class="p-2 my-1 mx-3 rounded-2 text-decoration-none text-dark box_item_course item_cursor_hover">دوره
+                                آموزش آشنایی با مفاهیم وب</span>
+                            <span
+                                class="p-2 my-1 mx-3 rounded-2 text-decoration-none text-dark box_item_course item_cursor_hover">...</span>
+                            <span
+                                class="p-2 my-1 mx-3 rounded-2 text-decoration-none text-dark box_item_course item_cursor_hover">...</span>
+                            <span
+                                class="p-2 my-1 mx-3 rounded-2 text-decoration-none text-dark box_item_course item_cursor_hover">...</span>
+                            <span
+                                class="p-2 my-1 mx-3 rounded-2 text-decoration-none text-dark box_item_course item_cursor_hover">...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- part2 -->
+                <div class="my-5">
+                    <h6>2. بودجه ای که می خواهید برای تبلیغات دوره شما هزینه شود را انتخاب کنید.</h6>
+                    <div class="custom-radio mt-3">
+                        <input type="radio" id="item" value="item" class="input_price">
+                        <label for="item">از موجودی کیف پول کم شود</label>
+                        <span>(موجودی 10,000,000 تومان)</span>
+                    </div>
+
+                    <div class="row mt-2 mx-0">
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+                            <button class="btn btn_primary_hover text-black rounded-3 py-2 px-3 btn_price">
+                                10,000,000 تومان
+                            </button>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+                            <button class="btn btn_primary_hover text-black rounded-3 py-2 px-3 btn_price">
+                                15,000,000 تومان
+                            </button>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+                            <button class="btn btn_primary_hover text-black rounded-3 py-2 px-3 btn_price">
+                                20,000,000 تومان
+                            </button>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+                            <button class="btn btn_primary_hover text-black rounded-3 py-2 px-3 btn_price">
+                                25,000,000 تومان
+                            </button>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+                            <button class="btn btn_primary_hover text-black rounded-3 py-2 px-3 btn_price">
+                                30,000,000 تومان
+                            </button>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
+                            <button class="btn btn_primary_hover text-black rounded-3 py-2 px-3 btn_price">
+                                35,000,000 تومان
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- patr3 -->
+                <div class="my-5">
+                    <h6>3. شما می‌توانید بودجه خود را در کمپین های بزرگ سالانه دانشجوبار و یا به صورت ماهانه به انتخاب
+                        خود سرمایه گذاری کنید.</h6>
+                    <div class="my-3 d-flex">
+                        <div class="custom-radio ms-3">
+                            <input type="radio" id="monthly" name="subscription" value="monthly" class="input_month">
+                            <label for="monthly">ماهانـه</label>
+                        </div>
+                        <div class="custom-radio">
+                            <input type="radio" id="campaign" name="subscription" value="campaign" class="input_campaign">
+                            <label for="campaign">کمپین</label>
+                        </div>
+                    </div>
+
+                    <div class="item_cursor_hover">
+                        <div class="d-none d-flex justify-content-between align-items-center bg-light rounded-2 pt-1 px-2 mt-3 div_month_items div_border">
+                            <div>
+                                <p class="opacity-75 p_month">ماه بهمن</p>
+                            </div>
+                            <div>
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="d-none bg-white rounded-2 mt-1 div_month_items_box div_border">
+                            <div class="my-2 d-flex flex-column">
+                                <span class="p-2 my-1 mx-3 form_part1_hover rounded-2 text-decoration-none text-dark div_month_item div_month_item_1">ماه
+                                    بهمن</span>
+                                <span class="p-2 my-1 mx-3 form_part1_hover rounded-2 text-decoration-none text-dark div_month_item div_month_item_2">ماه
+                                    اسفند</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item_cursor_hover">
+                        <div class="d-none d-flex justify-content-between align-items-center bg-light rounded-2 pt-1 px-2 mt-3 div_campaign_items div_border">
+                            <div>
+                                <p class="opacity-75 p_campaign">کمپین تولد 11 سالگی دانشجوبار</p>
+                            </div>
+                            <div>
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="d-none bg-white rounded-2 mt-1 div_campaign_items_box div_border">
+                            <div class="my-2 d-flex flex-column">
+                                <span class="p-2 my-1 mx-3 form_part1_hover rounded-2 text-decoration-none text-dark div_campaign_item div_campaign_item_1">کمپین
+                                    تولد 11 سالگی دانشجوبار </span>
+                                <span class="p-2 my-1 mx-3 form_part1_hover rounded-2 text-decoration-none text-dark div_campaign_item div_campaign_item_2">کمپین
+                                    آخر هفته
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section_2 -->
+
+    </div>
+
+
+    <!-- js -->
+    <script src="assets/js/index2.js"></script>
+
+</body>
+
+</html>

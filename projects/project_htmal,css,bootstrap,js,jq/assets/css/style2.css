@@ -1,0 +1,195 @@
+.body_color {
+    background-color: #ecebeb;
+}
+
+.container {
+    max-width: 87% !important;
+}
+
+
+/* generic */
+
+.btn_primary_hover:hover {
+    border: 2px solid blue !important;
+}
+
+.item_cursor_hover:hover {
+    cursor: pointer;
+}
+
+.div_border {
+    border: 2px solid #E6E6E6;
+}
+
+
+
+/* start header */
+
+.img_profile_offcanvas {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.text_percentage_profile_offcanvas {
+    background-color: #28B446;
+    width: 40px;
+    font-size: 12px;
+}
+
+.text_light_hover:hover {
+    background-color: #ecebeb !important;
+}
+
+.text_danger_hover:hover {
+    background-color: rgba(224, 12, 11, 0.1) !important;
+}
+
+.text_white_hover:hover {
+    background-color: white !important;
+}
+
+.profile_dot {
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    margin: 0 2px;
+    background-color: #09f;
+    border-radius: 5px;
+}
+
+.circular-progress {
+    right: 0px;
+    top: 0px;
+    --size: 240px;
+    --half-size: calc(var(--size) / 2);
+    --stroke-width: 16px;
+    --radius: calc((var(--size) - var(--stroke-width)) / 2);
+    --circumference: calc(var(--radius) * pi * 2);
+    --dash: calc((var(--progress) * var(--circumference)) / 100);
+}
+
+.animation_header{
+    animation: progress-animation 2s linear 0s 1 forwards;
+}
+
+.circular-progress circle {
+    cx: var(--half-size);
+    cy: var(--half-size);
+    r: var(--radius);
+    stroke-width: var(--stroke-width);
+    fill: none;
+    stroke-linecap: round;
+}
+
+.circular-progress circle.fg {
+    transform: rotate(-90deg);
+    transform-origin: var(--half-size) var(--half-size);
+    stroke-dasharray: var(--dash) calc(var(--circumference) - var(--dash));
+    transition: stroke-dasharray 0.3s linear 0s;
+    stroke: #28B446;
+}
+
+@property --progress {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 0;
+}
+
+@keyframes progress-animation {
+    from {
+        --progress: 0;
+    }
+    to {
+        --progress: 76;
+    }
+}
+
+.div_img{
+    top: 10px;
+    left: 10px;
+}
+
+.card {
+    border: 0px solid black !important;
+    --bs-card-border-width: 0 !important;
+    /* حذف یا تغییر مقدار */
+    --bs-card-border-color: transparent !important;
+    /* حذف یا تغییر مقدار */
+}
+
+.body-bg-accordion {
+    background-color: #D8E2EC !important;
+}
+
+.accordion-link {
+    transition-duration: 0.3s;
+    border-radius: 8px;
+}
+
+.accordion-link:hover {
+    background-color: #304aca;
+    color: white !important;
+}
+
+/* end header */
+
+
+
+/* start sections */
+
+.text_section1_p {
+    line-height: 2rem;
+}
+
+.div_box_items_course {
+    border: 2px solid #E6E6E6;
+    overflow: auto;
+    max-height: 250px;
+}
+
+.bg_item_course {
+    background-color: #F5F6FC !important;
+}
+
+.btn_price {
+    background-color: #F5F6FC !important;
+}
+
+/* input custom */
+/* Hide the default radio button */
+.custom-radio input[type="radio"] {
+    display: none;
+}
+
+/* Create a custom radio button */
+.custom-radio label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-radio label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: white;
+}
+
+.custom-radio_click+label::before {
+    border-color: #000000;
+    background-color: #00c853;
+    box-shadow: 0 0 0 3px white inset;
+}
+
+.bg_btn_price {
+    background-color: #F5F6FC !important;
+    transition-duration: 0.3s !important;
+}
+
+
+/* end sections */
