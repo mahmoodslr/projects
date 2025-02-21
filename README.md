@@ -1,6 +1,6 @@
 # 📌 My Projects
 
-Built with **HTML, CSS, Bootstrap , JS**
+Built with **HTML, CSS, Bootstrap , JS , React**
 
 ---
 
