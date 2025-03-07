@@ -17,11 +17,9 @@ const StyledToggle = styled.button`
   border-radius: var(--border-radius-sm);
   transform: translateX(0.8rem);
   transition: all 0.2s;
-
   &:hover {
     background-color: var(--color-grey-100);
   }
-
   & svg {
     width: 2.4rem;
     height: 2.4rem;
@@ -31,11 +29,9 @@ const StyledToggle = styled.button`
 
 const StyledList = styled.ul`
   position: fixed;
-
   background-color: var(--color-grey-0);
   box-shadow: var(--shadow-md);
   border-radius: var(--border-radius-md);
-
   right: ${(props) => props.position.x}px;
   top: ${(props) => props.position.y}px;
 `;
@@ -48,15 +44,12 @@ const StyledButton = styled.button`
   padding: 1.2rem 2.4rem;
   font-size: 1.4rem;
   transition: all 0.2s;
-
   display: flex;
   align-items: center;
   gap: 1.6rem;
-
   &:hover {
     background-color: var(--color-grey-50);
   }
-
   & svg {
     width: 1.6rem;
     height: 1.6rem;
@@ -87,13 +80,17 @@ function Toggle({ id }) {
   const { openId, close, open, setPosition } = useContext(MenusContext);
 
   function handleClick(e) {
+    e.stopPropagation();
+
     const rect = e.target.closest("button").getBoundingClientRect();
     setPosition({
       x: window.innerWidth - rect.width - rect.x,
       y: rect.y + rect.height + 8,
     });
+
     openId === "" || openId !== id ? open(id) : close();
   }
+
   return (
     <StyledToggle onClick={handleClick}>
       <HiEllipsisVertical />
@@ -103,9 +100,10 @@ function Toggle({ id }) {
 
 function List({ id, children }) {
   const { openId, position, close } = useContext(MenusContext);
-  const ref = useOutsideClick(close);
+  const ref = useOutsideClick(close, false);
 
   if (openId !== id) return null;
+
   return createPortal(
     <StyledList position={position} ref={ref}>
       {children}
